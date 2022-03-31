@@ -1,0 +1,18 @@
+{{>partials/header}}
+<div class="container">
+
+<h1>Formulário de Contato</h1>
+<hr>
+<form method="GET">
+    <label>Nome:</label>
+    <input type="text" name="name">
+    <button type="submit" class="btn btn-sm btn-primary">Enviar</button>
+</form>
+
+{{#mostrarNome}}
+<hr>
+<p>Seu nome é: <b>{{nome}}<b>.</p>
+{{/mostrarNome}}
+
+
+{{>partials/footer}}
